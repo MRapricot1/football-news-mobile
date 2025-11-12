@@ -5,9 +5,9 @@ import 'package:football_news/screens/newslist_form.dart';
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
 
-  final String nama = "Hammam Muhammad Mubarak";
-  final String npm = "2406401350";
-  final String kelas = "B";
+  final String nama = "Theo Samuel";
+  final String npm = "2406496366";
+  final String kelas = "A";
 
   final List<ItemHomepage> items = [
     ItemHomepage("See Football News", Icons.newspaper),
