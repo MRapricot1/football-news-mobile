@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:football_news/screens/menu.dart';
 import 'package:football_news/screens/newslist_form.dart';
+import 'package:football_news/screens/news_entry_list.dart';
 
 class ItemCard extends StatelessWidget {
   final ItemHomepage item;
@@ -29,11 +30,20 @@ class ItemCard extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const NewsFormPage(),
+                builder: (context) => const NewsFormPage(), 
               ),
             );
           }
+          else if (item.name == "See Football News") {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const NewsEntryListPage()
+                ),
+            );
+        }
         },
+        
 
         child: Container(
           padding: const EdgeInsets.all(8),
